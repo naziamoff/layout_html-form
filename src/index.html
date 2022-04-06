@@ -14,123 +14,129 @@
     <script type="text/javascript" src="./main.js"></script>
 
     <form
-    action="http://localhost:3000/api"
-    method="post"
-    class="form"
+      action="http://localhost:3000/api"
+      method="post"
+      class="form"
     >
       <fieldset class="fieldset field-border">
         <legend>Personal information</legend>
         <label class="form-field">
-      Surname:
+          Surname:
           <input
-        class="input"
-        type="text"
-        name="surname"
-        autocomplete="off">
+            class="input border-input"
+            type="text"
+            name="surname"
+            autocomplete="off"
+          >
         </label>
 
         <label class="form-field">
-      Name:
+          Name:
           <input
-        class="input"
-        type="text"
-        name="name"
-        autocomplete="off"
-        >
+            class="input"
+            type="text"
+            name="name"
+            autocomplete="off"
+          >
         </label>
 
         <label class="form-field">
-        How old are You?
+          How old are You?
           <input
-        class="input"
-        type="number"
-        name="age"
-        min="1"
-        max="100"
-        value="12"
-        >
+            class="input"
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+          >
         </label>
 
         <label class="form-field">
           Full date of birth:
           <input
-        class="input"
-        type="date"
-        name="date"
-        >
+          class="input"
+          type="date"
+          name="date"
+          >
         </label>
 
         <label class="form-field">
-      I accept the term of the agreement
+          I accept the term of the agreement
           <input
-    class="input"
-    type="checkbox"
-    name="agreement"
-    >
+            class="input"
+            type="checkbox"
+            name="agreement"
+          >
         </label>
       </fieldset>
 
       <fieldset class="fieldset field-border">
         <legend>Registration</legend>
         <label class="form-field">
-        E-mail:
+          E-mail:
           <input
-      class="input"
-      type="email"
-      name="email"
-      placeholder="email@example.com"
-        >
+            class="input border-input"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          >
         </label>
 
         <label class="form-field">
-        Password:
+          Password:
           <input
-        class="input" type="password"
-        name="password" required
-        minlength="5" maxlength="10"
-        >
+            class="input"
+            type="password"
+            name="password"
+            required
+            minlength="5"
+            maxlength="10"
+          >
         </label>
       </fieldset>
 
       <fieldset class="fieldset field-border">
         <legend>An interesting fact about you!</legend>
         <label class="form-field radio">
-        Do you love cats?
+          Do you love cats?
 
           <input
-        class="input"
-        type="radio"
-        name="loveCats"> Yes
+            class="input border-input"
+            type="radio"
+            name="loveCats"
+          > Yes
 
           <input
-        class="input"
-        type="radio"
-        name="loveCats"> No
+            class="input"
+            type="radio"
+            name="loveCats"
+          > No
 
         </label>
 
         <label class="form-field">
-        What is your favorite color?
+          What is your favorite color?
           <input
-        class="input"
-        type="color"
-        name="color"
+            class="input"
+            type="color"
+            name="color"
           >
         </label>
 
         <label class="form-field">
-        What time do you go to bed?
+          What time do you go to bed?
           <input
-        class="input"
-        type="time"
-        name="sleepTime"
-        step="2"
+            class="input"
+            type="time"
+            name="sleepTime"
+            step="2"
           >
         </label>
 
         <label class="form-field">
 
-        What are your favorite brand of cars?
+          What are your favorite brand of cars?
           <select name="brand" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -140,42 +146,40 @@
 
         <label for="workRate">How do you rate our work?
           <input
-          class="input" type="range"
-          id="workRate" name="workRate"
-              min="0" max="11"
-              value="0">
+            class="input"
+            type="range"
+            id="workRate"
+            name="workRate"
+            min="0"
+            max="11"
+            value="0"
+          >
         </label>
       </fieldset>
 
       <fieldset class="fieldset field-border">
         <legend>Additional info:</legend>
         <label class="form-field">
-        Comments:
+          Comments:
           <textarea
-        class="input" name="feedback"
-        cols="20" rows="2">
+            class="input border-input"
+            name="feedback"
+            cols="20"
+            rows="2"
+          >
           </textarea>
         </label>
 
         <label class="form-field">
           Would you recommend us?
           <select name="recommend" class="input">
-
             <option value="Yes">yes</option>
             <option value="No">no</option>
           </select>
         </label>
-
       </fieldset>
 
       <button type="submit">Submit</button>
     </form>
-
-
-
-
-
-
-
   </body>
 </html>
